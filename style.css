@@ -51,12 +51,19 @@
 
 
 .footer{
+    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+
     padding: 5px;
+    
 }
 
-p{
-   
+.p1h1p1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+
 }
