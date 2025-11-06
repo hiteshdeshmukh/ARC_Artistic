@@ -1,91 +1,249 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.p1{
-    
-}
+.p1 {}
 
-.p1h1{
-   
+.p1h1 {
+
     background: 
      linear-gradient(rgba(255, 255, 255, 0.5)),
-    url(assets/hd.jpg);
+    url(assets/hdd2.png);
     background-size: cover;
     background-position: center;
 
     
+
+    background-color: aliceblue;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.p1h1i1{
+.p1h1i1 {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
-    
+
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border: solid 2px #ffffff;
+    /* border: solid 2px #000000; */
 
     margin-top: 40px;
     margin-bottom: 15px;
 }
 
-.p1h1h1{
+.p1h1h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 10px;
 }
 
-.p1h1d1{
-    width: 80%;
+.p1h1d {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1h1dd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 15px; */
+    /* background-color: aqua; */
     
 }
 
-.p1h1d1b1{
-    background-color: #ffffff;
+.p1h1d1 {
+    display: flex;
+    justify-content: space-between;
+
+    /* padding: 0 20px 20px 20px; */
+    margin-bottom: 15px;
+    width: 90%;
+    
+}
+
+.p1h1d1b1 {
+    background-color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebu';
     border: 1px solid black;
     border-radius: 5px;
 
-    padding: 5px 8px;
+    /* padding: 5px 8px; */
+    /* margin: 0px 10px; */
 }
 
 
-.footer{
-    
-    
+.footer {
+
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding: 5px;
-    
+
 }
 
-.p1h1p1{
+.p1h1p1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    word-wrap:break-word;
-    overflow-wrap:break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     word-break: break-word;
     text-align: center;
     padding: 0px 15px;
+    
 
-   
+
 }
 
-.p1h1p2{
+.p1h1p2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight: 800;
     text-align: center;
-   
-   
+
+
+}
+
+
+
+.p2{
+
+    width: 100%;
+    
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     /* background:
+            linear-gradient(rgba(255, 255, 255, 0.6)),
+            url(assets/hdd2.png);
+        background-size: cover;
+        background-position: center; */
+
+    padding: 30px 20px 20px 20px;
+    
+}
+
+
+.p2s1d1, .p2s1d2{
+    background-color: aliceblue;
+    border-radius: 10px;
+
+    padding: 15px;
+    margin-bottom: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+
+.p2s1d1d1, .p2s1d2d1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 15px;
+}
+
+
+.p2s1d1b1, .p2s1d2b1{
+    border: 1px solid black;
+    border-radius: 5px;
+    
+    padding: 5px 8px;
+    margin: 0px 0px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .p1h1 {
+        width: 100%;
+        height: 100vh;
+
+        /* background:
+            linear-gradient(rgba(255, 255, 255, 0.6)),
+            url(assets/hdd.jpg);
+        background-size: cover;
+        background-position: center; */
+
+
+        display: flex;
+        flex-direction:row;
+    }
+
+    .p1h1d{
+        width: 48%;
+    }
+
+    .p1h1dd {
+        width: 48%;
+        
+    }
+
+    .p1h1h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .p1h1d1{
+        margin-bottom: 25px;
+    }
+
+    .p1h1i1{
+        width: 70%;
+        height: auto;
+    }
+
+    .p1h1p1{
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+
+
+
+
+    .p2{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    
+    }
+
+    .p2s1{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    
+        margin-top: 35px;
+    }
+
+    .p2s1d1, .p2s1d2{
+        width: 45%;
+    }
+
 }
