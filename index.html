@@ -17,43 +17,15 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Artistic</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="musicJourney.html">Journey</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Links
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Music</a></li>
-                            <li><a class="dropdown-item" href="#">Writing</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Artistic</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
 
 
     <div class="p1">
@@ -62,11 +34,11 @@
 
             <div class="p1h1d">
                 <img class="p1h1i1" src="assets/hdd.jpg" alt="Artistic">
-                
+
             </div>
 
             <div class="p1h1dd">
-                
+
                 <h1 class="p1h1h1">Hitesh Deshmukh</h1>
 
                 <div class="p1h1d1">
@@ -113,36 +85,41 @@
 
 
                 <h6 class="p2s1h2">Education</h6>
-                <p class="p2s1p1">Bachelor of Technology 
+                <p class="p2s1p1">Bachelor of Technology
                     - IT 2025
                     <br>Priyadarshini College of Engineering
-                    <br>Nagpur</p>
+                    <br>Nagpur
+                </p>
 
                 <h6 class="p2s1h2">Experience</h6>
                 <p class="p2s1p1">Android Developer Intern - 2024
                     <br>IDEVIFY Solutions pvt ltd
-                    <br>Nagpur Maharashtra, India</p>
+                    <br>Nagpur Maharashtra, India
+                </p>
 
                 <div class="p2s1d1d1">
                     <button class="btn p2s1d1b1" type="button">Download Resume</button>
                 </div>
-                
+
             </div>
 
             <div class="p2s1d2">
 
                 <h5 class="p2s1h1">Music</h5>
-                
+
 
                 <p class="p2s1p1">
-                    Hello! I'm Hitesh Deshmukh, a passionate developer, singer, writer, and composer. My journey is a blend of technology and creativity, where I explore the depths of both worlds. I believe in the power of art to connect people and express emotions beyond words. Join me as I share my creations and experiences in this artistic voyage.
+                    Hello! I'm Hitesh Deshmukh, a passionate developer, singer, writer, and composer. My journey is a
+                    blend of technology and creativity, where I explore the depths of both worlds. I believe in the
+                    power of art to connect people and express emotions beyond words. Join me as I share my creations
+                    and experiences in this artistic voyage.
                 </p>
 
                 <div class="p2s1d2d1">
                     <button class="btn  p2s1d2b1" type="button">Watch Video</button>
-            
+
                 </div>
-                
+
             </div>
 
         </section>
@@ -157,6 +134,19 @@
 
 
     </div>
+
+
+    <div id="about-section"></div>
+
+    <script>
+        // Load the external HTML file into the div
+        fetch('contact.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('about-section').innerHTML = html;
+            })
+            .catch(err => console.error('Error loading page:', err));
+    </script>
 
 
 
